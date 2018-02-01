@@ -79,6 +79,4 @@ prop
 
 ### Flow of the analysis
 
-*If you have time, document the analysis works, using internal links.*
-
 [First](./01-write-isntalled-packages.R) we get all of our packages, [second](./02-wrangle-packages.R) we munge them into added on packages and break that down by version, and [third](./03-barchart-packages-built.R) we save the barchart.

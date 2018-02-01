@@ -1,7 +1,10 @@
+library(tidyverse)
+library(here)
+library(devtools)
 
+### Stolen from the below :)
 dobtools::import_scripts("./R")
 
-### Stolen from above :)
 # import_scripts <- function (path, pattern = "*.R", quiet = TRUE) {
 #   files <- list.files(path, pattern, ignore.case = TRUE)
 #   file_paths <- str_c(path, "/", files)

@@ -19,7 +19,7 @@ inst_packages <- inst_packages %>%
 ## YES overwrite the file that is there now
 ## that came from me (Jenny)
 ## it an example of what yours should look like
-write_csv(inst_packages, "./data/installed-packages.csv")
+write_csv(inst_packages, here("data", "installed-packages.csv"))
 
 ## when this script works, stage & commit it and the csv file
 ## PUSH!
