@@ -24,6 +24,5 @@ apt_freqtable <- apt %>%
 ## they are just examples
 write_csv(apt_freqtable, "./data/add-on-packages-freqtable.csv")
 
-
 ## when this script works, stage & commit it and the csv files
 ## PUSH!
