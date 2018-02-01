@@ -28,23 +28,26 @@ library(tidyverse)
 
 ## Overview
 
-The goal of packages-report is to FINISH THIS SENTENCE.
+The goal of packages-report is to explore packages we've got installed and practice safe paths.
 
 ```{r, include = FALSE}
-## load data/add-on-packages-freqtable.csv here in this chunk
+apt <- read_csv("./data/add-on-packages.csv")
+apt_freqtable <- read_csv("./data/add-on-packages-freqtable.csv")
 ```
 
-I have `FILL THIS IN!!!` add-on packages installed.
+I have `r apt %>% count() %>% as_vector()` add-on packages installed.
 
 Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
 
 ```{r, echo = FALSE}
 ## print the frequency table here
-## make it prettier if you know how
+knitr::kable(apt_freqtable, format = "html")
 ```
 
 ![](figs/built-barchart.png)
 
 ### Flow of the analysis
 
-*If you have time, document the analysis works, using internal links.*
+[First](./01-write-isntalled-packages.R) we get all of our packages, [second](./02-wrangle-packages.R) we munge them into added on packages and break that down by version, and [third](./03-barchart-packages-built.R) we save the barchart.
+
+

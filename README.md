@@ -19,14 +19,66 @@ Workshop challenge checklist
 Overview
 --------
 
-The goal of packages-report is to FINISH THIS SENTENCE.
+The goal of packages-report is to explore packages we've got installed and practice safe paths.
 
-I have `FILL THIS IN!!!` add-on packages installed.
+I have 395 add-on packages installed.
 
 Here's how they break down in terms of which version of R they were built under, which is related to how recently they were updated on CRAN.
 
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Built
+</th>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+prop
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+3.3.0
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+0.1063291
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+3.3.2
+</td>
+<td style="text-align:right;">
+155
+</td>
+<td style="text-align:right;">
+0.3924051
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+3.3.3
+</td>
+<td style="text-align:right;">
+198
+</td>
+<td style="text-align:right;">
+0.5012658
+</td>
+</tr>
+</tbody>
+</table>
 ![](figs/built-barchart.png)
 
 ### Flow of the analysis
 
 *If you have time, document the analysis works, using internal links.*
+
+[First](./01-write-isntalled-packages.R) we get all of our packages, [second](./02-wrangle-packages.R) we munge them into added on packages and break that down by version, and [third](./03-barchart-packages-built.R) we save the barchart.
