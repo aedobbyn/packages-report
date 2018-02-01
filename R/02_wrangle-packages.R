@@ -1,5 +1,6 @@
 ## create a data frame from data/installed-packages.csv
 ## with, e.g., readr::read_csv() or read.csv()
+isnt_packages <- read_csv("./data/installed-packages.csv")
 
 ## filter out packages in the default library
 ## keep variables Package and Built
